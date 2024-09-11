@@ -69,7 +69,9 @@ jobs:
           Import-Module -Name '.\Tm\beta\src\Tm.Beta' -Verbose
           Import-Module -Name '.\Tm\v3\src\Tm.V3' -Verbose
           Import-Module -Name '.\Tm\v2024\src\Tm.V2024' -Verbose
-          Import-Module -Name '.\Tm' -Verbose
+
+          . .\Tm\Configuration.ps1
+          . .\Tm\Pagination.ps1
 
           Install-Module -Name Pester -Force
           Invoke-Pester -Output Detailed ./Tm/tests/
