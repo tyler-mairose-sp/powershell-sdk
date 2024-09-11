@@ -1,3 +1,5 @@
+Get-DefaultConfiguration
+
 Describe 'V3' {
     It 'Returns results for Get-Accounts' {
         $Response = Get-Accounts -WithHttpInfo
