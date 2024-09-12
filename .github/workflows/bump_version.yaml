@@ -74,6 +74,7 @@ jobs:
           LATEST_TAG=$(git describe --tags `git rev-list --tags --max-count=1`)
           cd Tm
           sed -e "s/ModuleVersion     = '${LATEST_TAG:1}'/ModuleVersion     = '${{ github.event.inputs.version }}'/g" Build.ps1 > Build.ps1.tmp && mv Build.ps1.tmp Build.ps1
+          sed -e "s/RequiredVersion = '${LATEST_TAG:1}'/RequiredVersion = '${{ github.event.inputs.version }}'/g" Build.ps1 > Build.ps1.tmp && mv Build.ps1.tmp Build.ps1
 
       - name: Build V2024 SDK
         id: buildV2024

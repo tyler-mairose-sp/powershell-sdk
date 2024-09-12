@@ -65,6 +65,12 @@ $Manifest = @{
 
     FunctionsToExport = $FunctionPath | Get-ChildItem -Filter *.ps1 | Get-FunctionsToExport
 
+    RequiredModules = @(
+        @{ModuleName = 'Tm.Beta'; RequiredVersion = '1.4.7'; }, 
+        @{ModuleName = 'Tm.V3'; RequiredVersion = '1.4.7'; },
+        @{ModuleName = 'Tm.V2024'; RequiredVersion = '1.4.7'; }
+    )
+
     VariablesToExport = @()
     AliasesToExport   = @()
     CmdletsToExport   = @()
