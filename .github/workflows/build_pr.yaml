@@ -41,7 +41,7 @@ jobs:
       - name: Build V2024 SDK
         id: buildV2024
         run: |
-          rm -rf ./PSSailpoint/v2024
+          rm -rf ./Tm/v2024
           java -jar openapi-generator-cli.jar generate -i api-specs/idn/sailpoint-api.v2024.yaml -g powershell -o Tm/v2024 --global-property skipFormModel=false --config sdk-resources/v2024-config.yaml
           node sdk-resources/postscript.js ./Tm/v2024
 
@@ -69,7 +69,9 @@ jobs:
           Import-Module -Name '.\Tm\beta\src\Tm.Beta' -Verbose
           Import-Module -Name '.\Tm\v3\src\Tm.V3' -Verbose
           Import-Module -Name '.\Tm\v2024\src\Tm.V2024' -Verbose
-          Import-Module -Name '.\Tm' -Verbose
+
+          . .\Tm\Configuration.ps1
+          . .\Tm\Pagination.ps1
 
           Install-Module -Name Pester -Force
           Invoke-Pester -Output Detailed ./Tm/tests/

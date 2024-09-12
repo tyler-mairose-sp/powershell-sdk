@@ -8,17 +8,17 @@
 
 @{
 
-# Script module or binary module file associated with this manifest.
-RootModule = 'PSSailpoint.psm1'
+    # Script module or binary module file associated with this manifest.
+RootModule = 'Tm.psm1'
 
 # Version number of this module.
-ModuleVersion = '1.4.3'
+ModuleVersion = '1.4.5'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
 
 # ID used to uniquely identify this module
-GUID = '7a197170-97e8-4dcd-a171-271d4aec2f36'
+GUID = '7a197170-97e8-4dcd-a171-271d4aec2f37'
 
 # Author of this module
 Author = 'Sailpoint Developer Relations'
@@ -69,15 +69,15 @@ PowerShellVersion = '6.2'
 # NestedModules = @()
 
 # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
-FunctionsToExport = 'Get-FunctionsToExport', 'Get-DefaultConfiguration', 
+FunctionsToExport = 'Get-DefaultConfiguration', 
                'Set-DefaultConfiguration', 'Get-IDNAccessToken', 'Get-EnvConfig', 
                'Get-LocalConfig', 'Get-Config', 'Invoke-Paginate', 
                'Invoke-PaginateSearch'
 
 RequiredModules = @(
-    @{ModuleName = 'Tm.beta'; ModuleVersion = '1.4.3'; }, 
-    @{ModuleName = 'Tm.v3'; RequiredVersion = '1.4.3'; },
-    @{ModuleName = 'Tm.v2024'; RequiredVersion = '1.4.3'; }
+    @{ModuleName = 'Tm.Beta'; ModuleVersion = '1.4.3'; }, 
+    @{ModuleName = 'Tm.V3'; RequiredVersion = '1.4.3'; },
+    @{ModuleName = 'Tm.V2024'; RequiredVersion = '1.4.3'; }
     )
 
 # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
