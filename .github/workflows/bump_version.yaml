@@ -106,9 +106,9 @@ jobs:
         run: |
           $DebugPreference="Continue"
           ./Tm/Build.ps1
-          ./Tm/v3/src/Tm.V3/Build.ps1
-          ./Tm/v2024/src/Tm.V2024/Build.ps1
-          ./Tm/beta/src/Tm.Beta/Build.ps1
+          ./Tm/v3/Build.ps1
+          ./Tm/v2024/Build.ps1
+          ./Tm/beta/Build.ps1
 
           Import-Module -Name '.\Tm\beta\src\Tm.Beta' -Verbose
           Import-Module -Name '.\Tm\v3\src\Tm.V3' -Verbose
