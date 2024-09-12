@@ -59,7 +59,7 @@ $Manifest = @{
     ModuleVersion     = '1.4.3'
 
     RootModule        = 'PSSailpoint.psm1'
-    Guid              = '7A197170-97E8-4DCD-A171-271D4AEC2F36' # Has to be static, otherwise each new build will be considered different module
+    Guid              = '7A197170-97E8-4DCD-A171-271D4AEC2F37' # Has to be static, otherwise each new build will be considered different module
 
     PowerShellVersion = '6.2'
 

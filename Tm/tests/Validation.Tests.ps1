@@ -1,6 +1,6 @@
 Describe 'V3' {
     It 'Returns results for Get-Accounts' {
-        $Response = Get-Accounts -WithHttpInfo
+        $Response = Get-Accounts -WithHttpInfo -Verbose
         
         $Response.Response | Should -Not -BeNullOrEmpty
         $Response.StatusCode | Should -Be 200
