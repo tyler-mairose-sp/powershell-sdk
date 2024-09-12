@@ -30,8 +30,4 @@ jobs:
               -Path './Tm/v2024/src/Tm.V2024' `
               -NuGetApiKey ${{ secrets.PS_GALLERY_TOKEN }} `
               -Verbose -Force
-          Publish-Module `
-              -Path './Tm' `
-              -NuGetApiKey ${{ secrets.PS_GALLERY_TOKEN }} `
-              -Verbose -Force
           
