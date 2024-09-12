@@ -75,7 +75,3 @@ jobs:
 
           Install-Module -Name Pester -Force
           Invoke-Pester -Output Detailed ./Tm/tests/
-
-          Write-Host $env:SAIL_CLIENT_ID
-          Write-Host $env:SAIL_CLIENT_SECRET
-          Write-Host $env:SAIL_BASE_URL
