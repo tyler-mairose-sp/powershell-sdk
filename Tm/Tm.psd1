@@ -12,7 +12,7 @@
 RootModule = 'Tm.psm1'
 
 # Version number of this module.
-ModuleVersion = '1.4.7'
+ModuleVersion = '1.4.8'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
@@ -51,7 +51,9 @@ PowerShellVersion = '6.2'
 # ProcessorArchitecture = ''
 
 # Modules that must be imported into the global environment prior to importing this module
-# RequiredModules = @()
+RequiredModules = @(@{ModuleName = 'Tm.Beta'; RequiredVersion = '1.4.8'; }, 
+               @{ModuleName = 'Tm.V3'; RequiredVersion = '1.4.8'; }, 
+               @{ModuleName = 'Tm.V2024'; RequiredVersion = '1.4.8'; })
 
 # Assemblies that must be loaded prior to importing this module
 # RequiredAssemblies = @()
