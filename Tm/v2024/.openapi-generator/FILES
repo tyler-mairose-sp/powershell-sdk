@@ -805,7 +805,6 @@ docs/Search.md
 docs/SearchAggregationSpecification.md
 docs/SearchArguments.md
 docs/SearchAttributeConfig.md
-docs/SearchDocument.md
 docs/SearchExportReportArguments.md
 docs/SearchFilterType.md
 docs/SearchFormDefinitionsByTenant400Response.md
@@ -1992,7 +1991,6 @@ src/Tm.V2024/Model/Search.ps1
 src/Tm.V2024/Model/SearchAggregationSpecification.ps1
 src/Tm.V2024/Model/SearchArguments.ps1
 src/Tm.V2024/Model/SearchAttributeConfig.ps1
-src/Tm.V2024/Model/SearchDocument.ps1
 src/Tm.V2024/Model/SearchExportReportArguments.ps1
 src/Tm.V2024/Model/SearchFilterType.ps1
 src/Tm.V2024/Model/SearchFormDefinitionsByTenant400Response.ps1
@@ -3104,7 +3102,6 @@ tests/Model/Search.Tests.ps1
 tests/Model/SearchAggregationSpecification.Tests.ps1
 tests/Model/SearchArguments.Tests.ps1
 tests/Model/SearchAttributeConfig.Tests.ps1
-tests/Model/SearchDocument.Tests.ps1
 tests/Model/SearchExportReportArguments.Tests.ps1
 tests/Model/SearchFilterType.Tests.ps1
 tests/Model/SearchFormDefinitionsByTenant400Response.Tests.ps1

@@ -169,7 +169,7 @@ void (empty response body)
 
 <a id="Search-V2024Get"></a>
 # **Search-V2024Get**
-> SearchDocument Search-V2024Get<br>
+> SystemCollectionsHashtable Search-V2024Get<br>
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[-Index] <String><br>
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[-Id] <String><br>
 
@@ -208,7 +208,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SearchDocument**](SearchDocument.md) (PSCustomObject)
+[**SystemCollectionsHashtable**](SystemCollectionsHashtable.md) (PSCustomObject)
 
 ### Authorization
 
@@ -223,7 +223,7 @@ Name | Type | Description  | Notes
 
 <a id="Search-V2024Post"></a>
 # **Search-V2024Post**
-> SearchDocument[] Search-V2024Post<br>
+> SystemCollectionsHashtable[] Search-V2024Post<br>
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[-Search] <PSCustomObject><br>
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[-Offset] <System.Nullable[Int32]><br>
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[-Limit] <System.Nullable[Int32]><br>
@@ -291,7 +291,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SearchDocument[]**](SearchDocument.md) (PSCustomObject)
+[**SystemCollectionsHashtable[]**](SystemCollectionsHashtable.md) (PSCustomObject)
 
 ### Authorization
 
