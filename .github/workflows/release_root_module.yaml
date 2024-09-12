@@ -18,6 +18,9 @@ jobs:
         shell: pwsh
         run: |
           $DebugPreference="Continue"
+          Install-Module -Name Tm.Beta -Force
+          Install-Module -Name Tm.V3 -Force
+          Install-Module -Name Tm.V2024 -Force
           Publish-Module `
               -Path './Tm' `
               -NuGetApiKey ${{ secrets.PS_GALLERY_TOKEN }} `
